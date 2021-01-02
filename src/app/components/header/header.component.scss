@@ -1,0 +1,22 @@
+@import 'src/sass/variables';
+
+header {
+    height: $headerHeight;
+    padding: 0 $globalPadding;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small-screen-nav {
+    display: none;
+}
+
+@media screen and (max-width: $smallDeviceBreakpoint) {
+    .small-screen-nav {
+        display: block;
+    }
+    .desktop-nav {
+        display: none;
+    }
+}

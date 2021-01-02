@@ -1,0 +1,10 @@
+@import 'src/sass/variables';
+  
+.sidenav {
+    width: 100vw;
+}
+
+.container {
+    background-color: #fff;
+    padding: 0 $globalPadding;
+}

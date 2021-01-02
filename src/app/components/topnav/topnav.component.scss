@@ -1,0 +1,26 @@
+nav {
+    display: flex;
+    a {
+        text-decoration: none;
+    }
+}
+
+.nav-item {
+    margin-left: 35px;
+}
+
+.menu-openner {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.menu-openner-mouseover {
+    cursor: pointer;
+    &:hover {
+        cursor: pointer;
+    } 
+}

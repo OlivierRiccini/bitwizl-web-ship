@@ -1,0 +1,29 @@
+<nav>
+    <ng-template ngFor let-link [ngForOf]="navigationLinks">
+
+        <div *ngIf="!link.type || link.type === 'default'" class="nav-item">
+            <a *ngIf="!link.navigationType || link.navigationType === 'internal'"
+               [ngClass]="link.customClass"
+               [routerLink]="link.href" 
+               [alt]="link.alt">{{ link.name }}</a>
+            <a *ngIf="link.navigationType && link.navigationType === 'external'"
+               [ngClass]="link.customClass"
+               [attr.href]="link.href" 
+               [alt]="link.alt">{{ link.name }}</a>
+        </div>
+
+        <div *ngIf="link.type && link.type === 'dropdownMenu' && link.menuLinks" class="nav-item">
+            <div class="menu-openner" [matMenuTriggerFor]="menu">
+                <span>{{ link.name }}</span> 
+                <span class="material-icons">
+                    arrow_drop_down
+                </span>
+            </div>
+            <mat-menu #menu="matMenu" xPosition="before">
+                <a *ngFor="let menuLink of link.menuLinks" mat-menu-item [routerLink]="menuLink.href" [alt]="menuLink.alt">{{ menuLink.name }}</a>
+            </mat-menu>
+        </div>
+
+    </ng-template>
+
+</nav>

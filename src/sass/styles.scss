@@ -1,0 +1,17 @@
+@import 'src/sass/material';
+@import 'src/sass/variables';
+@import 'src/sass/components/button';
+@import 'src/sass/components/logo';
+
+html, body {
+   height: 100%; 
+}
+ 
+body { 
+  margin: 0;
+  line-height: 1.2;
+}
+
+h1, h2, h3, p, a, span, .mat-menu-item {
+  color: $greyDarker;
+} 
