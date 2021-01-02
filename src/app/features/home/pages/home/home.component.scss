@@ -1,3 +1,11 @@
+@import 'src/sass/variables';
+
 section {
+    // padding: 80px 0;
+}
+
+#landing {
+    // min-height: calc(100vh - #{$headerHeight} - 10vh);
+    // display: flex;
     padding: 80px 0;
 }

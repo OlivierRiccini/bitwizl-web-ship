@@ -1,5 +1,8 @@
+@import 'src/sass/variables';
+
 nav {
     display: flex;
+    align-items: center;
     a {
         text-decoration: none;
     }
@@ -7,6 +10,10 @@ nav {
 
 .nav-item {
     margin-left: 35px;
+}
+
+.nav-item:hover a {
+    color: $orange;
 }
 
 .menu-openner {

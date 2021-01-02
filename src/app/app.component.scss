@@ -1,5 +1,10 @@
 @import 'src/sass/variables';
   
+#global-wrapper {
+    max-width: 1425px;
+    margin: 0 auto;
+}
+
 .sidenav {
     width: 100vw;
 }
