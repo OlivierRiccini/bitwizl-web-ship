@@ -3,8 +3,14 @@
     <ng-template ngFor let-link [ngForOf]="navigationLinks">
 
         <div *ngIf="!link.type || link.type === 'default'" class="nav-item">
-            <a *ngIf="!link.navigationType || link.navigationType === 'internal'" [routerLink]="link.href" [alt]="link.alt">{{ link.name }}</a>
-            <a *ngIf="link.navigationType && link.navigationType === 'external'" [attr.href]="link.href" [alt]="link.alt">{{ link.name }}</a>
+            <a *ngIf="!link.navigationType || link.navigationType === 'internal'" 
+                [routerLink]="link.href"
+                routerLinkActive="active-link"
+                [alt]="link.alt">{{ link.name }}</a>
+            <a *ngIf="link.navigationType && link.navigationType === 'external'" 
+                attr.href]="link.href"
+                routerLinkActive="active-link"
+                [alt]="link.alt">{{ link.name }}</a>
         </div>
 
         <div *ngIf="link.type && link.type === 'dropdownMenu' && link.menuLinks" class="nav-item">

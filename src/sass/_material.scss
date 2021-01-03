@@ -60,8 +60,11 @@ $bitwizl-website-theme: mat-light-theme((
 
 $custom-typography: mat-typography-config(
   $font-family: 'Ubuntu, sans-serif',
-  $headline: mat-typography-level(32px, 1.2, 700),
-  $body-1: mat-typography-level(16px, 1.2, 300)
+  $headline: mat-typography-level(32px, 1.75, 700),
+  $title: mat-typography-level(2rem, 1.75, 500),
+  $subheading-2: mat-typography-level(1.85rem, 1.75, 500),
+  $display-4: mat-typography-level(3.5rem, 1.25, 400),
+  $body-1: mat-typography-level(1.15rem, 1.75, 300)
 );
 
 // Include theme styles for core and each component used in your app.

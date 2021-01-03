@@ -1,18 +1,23 @@
 import { INavigationLink } from 'src/app/models/navigation-link';
-import { environment } from 'src/environments/environment';
 
 export const NAVIGATION_LINKS: INavigationLink[] = [
   {
     name: 'Shipper',
-    href: environment.clientAppUrl,
-    alt: 'Shipper',
-    navigationType: 'external'
+    href: 'shipper',
+    alt: 'shipper',
+    navigationType: 'internal'
+  },
+  {
+    name: 'Client',
+    href: 'client',
+    alt: 'client',
+    navigationType: 'internal'
   },
   {
     name: 'Courier',
-    href: environment.courierAppUrl,
+    href: 'courier',
     alt: 'Courier',
-    navigationType: 'external'
+    navigationType: 'internal'
   },
   {
     name: 'Guides',
@@ -21,7 +26,8 @@ export const NAVIGATION_LINKS: INavigationLink[] = [
       {
         name: 'White Paper',
         href: '',
-        alt: 'White Paper'
+        alt: 'White Paper',
+        navigationType: 'external'
       },
       {
         name: 'Get Started',

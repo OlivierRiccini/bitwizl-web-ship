@@ -1,0 +1,55 @@
+@import 'src/sass/variables';
+
+footer {
+    margin-top: 60px;
+    padding: 60px $globalPadding 10px $globalPadding;
+    border-top: 1px solid $lightGrey;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    a:hover {
+        color: $orange;
+    }
+}
+
+.list-title {
+    font-weight: 400;
+}
+
+.left-part, .middle-left-part {
+    a {
+        text-decoration: none;
+    }
+}
+
+.mobile-app-logo {
+    width: 160px;
+}
+
+.active-link {
+    color: $orange;
+    font-weight: 400;
+}
+
+.copyright-section {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    font-size: .8rem;
+    align-items: center;
+    img {
+        width: 20px;
+        margin-left: 10px;
+    }
+}
+
+.blockbrainers-link {
+    display: flex;
+    align-items: center;
+}

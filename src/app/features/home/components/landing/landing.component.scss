@@ -2,8 +2,7 @@
 
 .flexbox {
     display: flex;
-    line-height: 1.4;
-    min-height: calc(100vh - #{$headerHeight} - 10vh);
+    min-height: calc(100vh - #{$headerHeight} - 25vh);
 }
 
 .left-part {
@@ -48,8 +47,4 @@
 
 .section-intro {
     padding-top: 30px;
-}
-
-.large-text {
-    font-size: 3.5rem;
 }

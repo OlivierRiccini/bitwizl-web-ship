@@ -4,11 +4,13 @@
         <div *ngIf="!link.type || link.type === 'default'" class="nav-item">
             <a *ngIf="!link.navigationType || link.navigationType === 'internal'"
                [ngClass]="link.customClass"
-               [routerLink]="link.href" 
+               [routerLink]="link.href"
+               routerLinkActive="active-link"
                [alt]="link.alt">{{ link.name }}</a>
             <a *ngIf="link.navigationType && link.navigationType === 'external'"
                [ngClass]="link.customClass"
-               [attr.href]="link.href" 
+               [attr.href]="link.href"
+               routerLinkActive="active-link"
                [alt]="link.alt">{{ link.name }}</a>
         </div>
 

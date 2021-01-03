@@ -1,9 +1,5 @@
 @import 'src/sass/variables';
   
-#global-wrapper {
-    max-width: 1425px;
-    margin: 0 auto;
-}
 
 .sidenav {
     width: 100vw;
@@ -11,5 +7,10 @@
 
 .container {
     background-color: #fff;
+    max-width: 1425px;
+    margin: 0 auto;
+}
+
+#content-wrapper {
     padding: 0 $globalPadding;
 }

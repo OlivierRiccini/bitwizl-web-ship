@@ -1,0 +1,79 @@
+<footer>
+    <div class="flexbox">
+        <div class="left-part">
+            <p class="list-title">Bitwizl</p>
+            <ul>
+                <li *ngFor="let link of navigationLinks">
+                    <a *ngIf="(!link.navigationType || link.navigationType === 'internal') && link.type !== 'dropdownMenu'"
+                        [routerLink]="link.href"
+                        routerLinkActive="active-link"
+                        [alt]="link.alt">{{ link.name }}</a>
+                    <a *ngIf="(link.navigationType && link.navigationType === 'external') && link.type !== 'dropdownMenu'"
+                        [attr.href]="link.href" 
+                        [alt]="link.alt">{{ link.name }}</a>
+
+                    <ng-template [ngIf]="link.type === 'dropdownMenu' && link.menuLinks">
+                        <ul>
+                            <li *ngFor="let sublink of link.menuLinks">
+                                <a *ngIf="!sublink.navigationType || sublink.navigationType === 'internal'"
+                                    [ngClass]="sublink.customClass"
+                                    [routerLink]="sublink.href"
+                                    routerLinkActive="active-link"
+                                    [alt]="sublink.alt">{{ sublink.name }}</a>
+                                <a *ngIf="sublink.navigationType && sublink.navigationType === 'external'"
+                                    [ngClass]="sublink.customClass"
+                                    [attr.href]="sublink.href"
+                                    [alt]="sublink.alt">{{ sublink.name }}</a>
+                            </li>
+                        </ul>
+                    </ng-template>
+                </li>
+            </ul>
+        </div>
+        <div class="middle-left-part">
+            <p class="list-title">Products</p>
+            <ul>
+                <li>
+                    <a href="/" alt="">Errands</a>
+                </li>
+                <li>
+                    <a href="/" alt="">Ship</a>
+                </li>
+                <li>
+                    <a href="/" alt="">Become a Courier</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p class="list-title">Keep in Touch</p>
+            <ul>
+                <li>
+                    <a href="mailto:hello@blockbrainers.com">hello@blockbrainers.com</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p class="list-title">Download Bitwizl mobile app</p>
+            <ul>
+                <li>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img class="mobile-app-logo" src="../../../assets/images/google-play.png" alt="Google play icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <img class="mobile-app-logo" src="../../../assets/images/appstore.svg" alt="App store icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright-section">
+        <span>&copy; {{ currentYear }} Blockbrainers</span>
+        <span class="blockbrainers-link">Built with love by &nbsp;
+            <a href="http://blockbrainers.com" target="_blank" rel="noopener noreferrer">Blockbrainers  
+            </a>
+            <img src="../../../assets/images/blockbrainers-logo.png" alt="">
+        </span>
+    </div>
+</footer>
