@@ -7,12 +7,12 @@ export const NAVIGATION_LINKS: INavigationLink[] = [
     alt: 'shipper',
     navigationType: 'internal'
   },
-  {
-    name: 'Client',
-    href: 'client',
-    alt: 'client',
-    navigationType: 'internal'
-  },
+  // {
+  //   name: 'Client',
+  //   href: 'client',
+  //   alt: 'client',
+  //   navigationType: 'internal'
+  // },
   {
     name: 'Courier',
     href: 'courier',
