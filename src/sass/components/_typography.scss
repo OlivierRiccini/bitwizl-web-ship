@@ -1,0 +1,78 @@
+@import 'src/sass/variables';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+
+body {
+    font-size: 1.15rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+body * { 
+    font-family: Ubuntu, 'sans-serif';
+}
+
+p {
+    margin-top: 0;
+}
+
+.typo-xs {
+    font-size: 1rem;
+}
+
+.typo-s {
+    font-size: 1.15rem;
+}
+
+.typo-m {
+    font-size: 1.85rem;
+}
+
+.typo-l {
+    font-size: 2rem;
+}
+
+.typo-xl {
+    font-size: 3.2rem;
+}
+
+.typo-bold {
+    font-weight: 400;
+}
+
+.typo-extra-bold {
+    font-weight: 500;
+}
+
+// $xs: 600px;
+// $sm: 960px;
+// $md: 1280px;
+
+@media(max-width: $md) {    
+    .typo-xs {
+        font-size: 1rem;
+    }
+
+    .typo-s {
+        font-size: 1.15rem;
+    }
+
+    .typo-m {
+        font-size: 1.85rem;
+    }
+
+    .typo-l {
+        font-size: 2rem;
+    }
+
+    .typo-xl {
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: $sm) {
+     
+}
+
+@media(max-width: $xs) {
+     
+}

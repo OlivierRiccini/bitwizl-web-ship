@@ -11,8 +11,8 @@ const routes: Routes = [
     loadChildren: () => import('./features/home/home.module').then(m => m.HomeModule)
   },
   {
-    path: 'client',
-    loadChildren: () => import('./features/client/client.module').then(m => m.ClientModule)
+    path: 'shipper',
+    loadChildren: () => import('./features/shipper/shipper.module').then(m => m.ShipperModule)
   },
   {
     path: 'courier',
@@ -25,7 +25,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
