@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  clientAppUrl: 'http://localhost:4300',
+  homeAppUrl: 'http://localhost:4200',
   courierAppUrl: 'http://localhost:4300'
 };

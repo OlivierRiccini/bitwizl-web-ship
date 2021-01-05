@@ -6,7 +6,7 @@ const basePathConverter = require('base-path-converter');
 
 const pinataApiKey = '1924fe5979d235dcbd38';
 const pinataSecretApiKey = '22504ccceeafabe41c7e28f5ac24e801390541da5b2bee0106168a718d168057';
-const appName = 'bitwizl-website';
+const appName = 'bitwizl-web-ship';
 
 const deploy = () => {
     const url = `https://api.pinata.cloud/pinning/pinFileToIPFS`;

@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('bitwizl-website app is running!');
+    expect(page.getTitleText()).toEqual('bitwizl-web-ship app is running!');
   });
 
   afterEach(async () => {

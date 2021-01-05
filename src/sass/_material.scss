@@ -42,19 +42,19 @@ $mat-indigo: (
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$bitwizl-website-primary: mat-palette($mat-indigo);
-$bitwizl-website-accent: mat-palette($mat-pink, A200, A100, A400);
+$bitwizl-web-ship-primary: mat-palette($mat-indigo);
+$bitwizl-web-ship-accent: mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$bitwizl-website-warn: mat-palette($mat-red);
+$bitwizl-web-ship-warn: mat-palette($mat-red);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$bitwizl-website-theme: mat-light-theme((
+$bitwizl-web-ship-theme: mat-light-theme((
   color: (
-    primary: $bitwizl-website-primary,
-    accent: $bitwizl-website-accent,
-    warn: $bitwizl-website-warn,
+    primary: $bitwizl-web-ship-primary,
+    accent: $bitwizl-web-ship-accent,
+    warn: $bitwizl-web-ship-warn,
   )
 ));
 
@@ -72,5 +72,5 @@ $bitwizl-website-theme: mat-light-theme((
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 // @include angular-material-typography($custom-typography);
-@include angular-material-theme($bitwizl-website-theme);
+@include angular-material-theme($bitwizl-web-ship-theme);
 

@@ -1,23 +1,12 @@
 import { INavigationLink } from 'src/app/models/navigation-link';
+import { environment } from 'src/environments/environment';
 
 export const NAVIGATION_LINKS: INavigationLink[] = [
   {
-    name: 'Shipper',
-    href: 'shipper',
-    alt: 'shipper',
-    navigationType: 'internal'
-  },
-  // {
-  //   name: 'Client',
-  //   href: 'client',
-  //   alt: 'client',
-  //   navigationType: 'internal'
-  // },
-  {
-    name: 'Courier',
-    href: 'courier',
-    alt: 'Courier',
-    navigationType: 'internal'
+    name: 'Bitwizl Home',
+    href: environment.homeAppUrl,
+    alt: 'Bitwizl Home',
+    navigationType: 'external'
   },
   {
     name: 'Guides',
